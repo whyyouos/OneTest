@@ -6,7 +6,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import static android.view.View.OnClickListener;
@@ -19,7 +18,6 @@ import static android.view.View.OnClickListener;
 public class MainActivity extends ActionBarActivity implements OnClickListener{
     private String TAG = "MainActivity.class";
     private Context mContext;
-    private TextView mText;
     private Button mMainBtn;
     private int mTemp = 1;
 
@@ -28,7 +26,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
         mContext = MainActivity.this;
-        mText = (TextView) findViewById(R.id.main_tx);
         mMainBtn = (Button) findViewById(R.id.main_btn);
         mMainBtn.setOnClickListener(this);
 
