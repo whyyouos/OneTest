@@ -6,7 +6,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import static android.view.View.OnClickListener;
@@ -17,8 +16,7 @@ import static android.view.View.OnClickListener;
 public class MainActivity extends ActionBarActivity implements OnClickListener{
     private String TAG = "MainActivity.class";
     private Context mContext;
-    private TextView mText;
-    private Button mMainBtn;
+    private Button mOneBtn;
     private int mTemp = 1;
 
     @Override
@@ -26,9 +24,8 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
         mContext = MainActivity.this;
-        mText = (TextView) findViewById(R.id.main_tx);
-        mMainBtn = (Button) findViewById(R.id.main_btn);
-        mMainBtn.setOnClickListener(this);
+        mOneBtn = (Button) findViewById(R.id.one_btn);
+        mOneBtn.setOnClickListener(this);
 
         if (mTemp==1){
             System.out.print("我来到这里了");
@@ -40,7 +37,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.main_btn:
+            case R.id.one_btn:
                 System.out.print("点中按钮");
                 Log.d(TAG,"弄死你个逗逼丫的");
                 Toast.makeText(mContext,"点中按钮",Toast.LENGTH_LONG).show();
