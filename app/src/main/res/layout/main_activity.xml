@@ -11,7 +11,7 @@
         android:background="@color/accent_material_dark">
 
         <Button
-            android:id="@+id/one_btn"
+            android:id="@+id/branch_one_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
