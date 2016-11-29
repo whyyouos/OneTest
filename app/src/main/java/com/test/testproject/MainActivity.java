@@ -1,14 +1,10 @@
 package com.test.testproject;
 
 import android.content.Context;
-import android.provider.Settings;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,7 +12,9 @@ import android.widget.Toast;
 import static android.view.View.OnClickListener;
 
 /**
- *
+ * 类说明:master分支
+ *@data 2016年11月29日 15:14:55
+ *@name LiangAn
  */
 public class MainActivity extends ActionBarActivity implements OnClickListener{
     private String TAG = "MainActivity.class";
