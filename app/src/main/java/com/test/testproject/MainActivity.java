@@ -5,18 +5,19 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import static android.view.View.OnClickListener;
-
 /**
- * branch_one
+ * 类说明:branch_one
+ *@data 2016年11月29日 15:14:55
+ *@name LiangAn
  */
 public class MainActivity extends ActionBarActivity implements OnClickListener{
     private String TAG = "MainActivity.class";
     private Context mContext;
-    private Button Branch_OneBtn;
+    private TextView Branch_OneBtn;
     private int mTemp = 1;
 
     @Override
@@ -24,7 +25,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
         mContext = MainActivity.this;
-        Branch_OneBtn = (Button) findViewById(R.id.branch_one_btn);
+        Branch_OneBtn = (TextView) findViewById(R.id.branch_one_btn);
         Branch_OneBtn.setOnClickListener(this);
 
         if (mTemp==1){
